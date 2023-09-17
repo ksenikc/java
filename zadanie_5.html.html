@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Нажми меня!"> <br><br>
+    <input type="button" value="Нажми и меня!"> <br><br>
+    <input type="button" value="Меня тоже не забудь"> <br><br>
+    <input type="button" value="А как же я?">
+    <script>
+        let buttons = document.body.querySelectorAll('input');
+        for(but of buttons){
+            but.onclick = function(){
+                alert('Кнопка нажата!');
+            }
+        }
+    </script>
+</body>
+</html>
