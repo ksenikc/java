@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+        <div class="example-class"></div>
+        <div class="example-class"></div>
+        <div class="example-class"></div>
+        <div class="example-class"></div>
+        <div class="example-class"></div> 
+        <script>
+            let elems = document.body.getElementsByClassName('example-class');
+            let treb = '100px';
+            for(elem of elems){
+                elem.style.height= treb;
+            }
+        </script>
+</body>
+</html>
